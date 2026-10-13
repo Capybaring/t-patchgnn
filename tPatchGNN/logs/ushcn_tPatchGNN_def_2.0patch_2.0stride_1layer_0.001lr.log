@@ -1,0 +1,9 @@
+/home/ybhuo/hq/t-PatchGNN/tPatchGNN/run_models.py
+2026-10-13 02:15:12
+run_models.py --dataset ushcn --state def --history 24 --patience 10 --batch_size 192 --lr 1e-3 --patch_size 2 --stride 2 --nhead 1 --tf_layer 1 --nlayer 1 --te_dim 10 --node_dim 10 --hid_dim 32 --outlayer Linear --seed 1 --gpu 0
+Namespace(state='def', n=100000000, hop=1, nhead=1, tf_layer=1, nlayer=1, epoch=1000, patience=10, history=24, patch_size=2.0, stride=2.0, logmode='a', lr=0.001, w_decay=0.0, batch_size=192, save='experiments/', load=None, seed=1, dataset='ushcn', quantization=0.0, model='tPatchGNN', outlayer='Linear', hid_dim=32, te_dim=10, node_dim=10, gpu='0', npatch=12, device=device(type='cuda'), PID=1360750, n_months=48, pred_window=1, ndim=5)
+- Epoch 000, ExpID 3690
+Train - Loss (one batch): 0.24728
+Val - Loss, MSE, RMSE, MAE, MAPE: 0.85174, 0.85174, 0.92290, 0.35896, -63.83%
+Test - Best epoch, Loss, MSE, RMSE, MAE, MAPE: 0, 0.52838, 0.52838, 0.72690, 0.33102, -62.80%
+Time spent: 10.79s

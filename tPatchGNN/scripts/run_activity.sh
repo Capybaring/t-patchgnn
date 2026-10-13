@@ -1,0 +1,1 @@
+python run_models.py     --dataset activity --state 'def' --history 24     --patience 10 --batch_size 192 --lr 1e-3     --patch_size 2 --stride 2 --nhead 1 --tf_layer 1 --nlayer 1     --te_dim 10 --node_dim 10 --hid_dim 32     --outlayer Linear --seed 1 --gpu 0
